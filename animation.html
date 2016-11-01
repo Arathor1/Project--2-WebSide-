@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
@@ -13,8 +14,18 @@
   <rect x="05" y="250" width="529" height="245" fill="white"/>
   <polygon points="150 0 100 50 125 50 75 100 100
    100 50 150 250 150 200 100 225
-    100 175 50 200 50" fill="darkgreen"/>
-  <rect x="125" y="150" width="50" height="100" fill="brown"/>
+    100 175 50 200 50" fill="darkgreen">
+  <animate attributeName="opacity" from="1" to="0" dur="5s"
+  repeatCount="indefinite"/>
+</polygon>
+ <ellipse cx="470" cy="50" rx="50" ry="30" fill="white">
+ <animate attributeName="cx" from="0" to="470" dur="5s"
+ repeatCount="indefinite"/>
+</ellipse>
+  <rect x="125" y="150" width="50" height="100" fill="brown">
+  <animate attributeName="opacity" from="1" to="0" dur="1s"
+  repeatCount="indefinite"/>
+</rect>
   <circle cx="300" cy="50" r="15" fill="white">
   <animate attributeName="cy" from="0" to="50" dur="5s"
   repeatCount="indefinite"/>
